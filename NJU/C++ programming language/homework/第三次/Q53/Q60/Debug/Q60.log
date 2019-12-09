@@ -1,0 +1,20 @@
+﻿  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /ZI /JMC /W3 /WX- /diagnostics:classic /sdl /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:prompt Q60.cpp
+  
+  Q60.cpp
+e:\nju的各种\nju\c++ programming language\homework\第三次\q53\q60\q60.cpp(77): warning C4018: “<”: 有符号/无符号不匹配
+e:\nju的各种\nju\c++ programming language\homework\第三次\q53\q60\q60.cpp(78): warning C4018: “<”: 有符号/无符号不匹配
+e:\nju的各种\nju\c++ programming language\homework\第三次\q53\q60\q60.cpp(107): warning C4018: “<”: 有符号/无符号不匹配
+e:\nju的各种\nju\c++ programming language\homework\第三次\q53\q60\q60.cpp(181): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\nju的各种\nju\c++ programming language\homework\第三次\q53\q60\q60.cpp(185): warning C4018: “<”: 有符号/无符号不匹配
+e:\nju的各种\nju\c++ programming language\homework\第三次\q53\q60\q60.cpp(189): warning C4018: “<”: 有符号/无符号不匹配
+e:\nju的各种\nju\c++ programming language\homework\第三次\q53\q60\q60.cpp(219): warning C4018: “<”: 有符号/无符号不匹配
+e:\nju的各种\nju\c++ programming language\homework\第三次\q53\q60\q60.cpp(273): warning C4018: “<”: 有符号/无符号不匹配
+e:\nju的各种\nju\c++ programming language\homework\第三次\q53\q60\q60.cpp(277): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  Microsoft (R) Incremental Linker Version 14.16.27034.0
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  "/OUT:E:\NJU的各种\NJU\C++ programming language\homework\第三次\Q53\Debug\Q60.exe" /INCREMENTAL kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST "/MANIFESTUAC:level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK "/PDB:E:\NJU的各种\NJU\C++ programming language\homework\第三次\Q53\Debug\Q60.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT "/IMPLIB:E:\NJU的各种\NJU\C++ programming language\homework\第三次\Q53\Debug\Q60.lib" /MACHINE:X86 Debug\Q60.obj 
+  Q60.vcxproj -> E:\NJU的各种\NJU\C++ programming language\homework\第三次\Q53\Debug\Q60.exe
