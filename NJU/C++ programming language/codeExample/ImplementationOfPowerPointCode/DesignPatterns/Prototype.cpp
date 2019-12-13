@@ -81,15 +81,15 @@ private:
 	string m_strName;
 };
 
-int main() {
-	Monkey* monkey = new SixLittleAgeChild("ÁùÐ¡ÁäÍ¯");
-	Monkey* monkey1 = monkey->Clone();
-	Monkey* monkey2 = monkey1->Clone();
-
-	monkey->tacticalBack();
-	monkey1->tacticalBack();
-	monkey2->tacticalBack();
-
-
-	return 0;
-}
+//int main() {
+//	Monkey* monkey = new SixLittleAgeChild("ÁùÐ¡ÁäÍ¯");
+//	Monkey* monkey1 = monkey->Clone();
+//	Monkey* monkey2 = monkey1->Clone();
+//
+//	monkey->tacticalBack();
+//	monkey1->tacticalBack();
+//	monkey2->tacticalBack();
+//
+//
+//	return 0;
+//}
