@@ -42,5 +42,11 @@
     <ClCompile Include="Proxy.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Bridge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

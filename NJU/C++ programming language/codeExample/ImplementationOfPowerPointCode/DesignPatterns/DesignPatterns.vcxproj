@@ -148,7 +148,9 @@
     </BuildLog>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bridge.cpp" />
     <ClCompile Include="Builder.cpp" />
+    <ClCompile Include="Command.cpp" />
     <ClCompile Include="Decorator.cpp" />
     <ClCompile Include="Facade.cpp" />
     <ClCompile Include="Flyweight.cpp" />

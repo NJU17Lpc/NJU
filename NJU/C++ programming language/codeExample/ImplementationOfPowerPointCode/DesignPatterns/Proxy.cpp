@@ -109,11 +109,11 @@ private:
 };
 
 
-int main() {
-	Proxy* proxy = new Proxy();
-	proxy->Recharge(20);
-	proxy->Recharge(200);
-
-
-	return 0;
-}
+//int main() {
+//	Proxy* proxy = new Proxy();
+//	proxy->Recharge(20);
+//	proxy->Recharge(200);
+//
+//
+//	return 0;
+//}
