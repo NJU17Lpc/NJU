@@ -148,16 +148,19 @@
     </BuildLog>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AbstractFactory.cpp" />
     <ClCompile Include="Bridge.cpp" />
     <ClCompile Include="Builder.cpp" />
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="Decorator.cpp" />
     <ClCompile Include="Facade.cpp" />
+    <ClCompile Include="FactoryMethod.cpp" />
     <ClCompile Include="Flyweight.cpp" />
     <ClCompile Include="Mediator.cpp" />
     <ClCompile Include="Observer.cpp" />
     <ClCompile Include="Prototype.cpp" />
     <ClCompile Include="Proxy.cpp" />
+    <ClCompile Include="SimpleFactory.cpp" />
     <ClCompile Include="TemplateMethod.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
