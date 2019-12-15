@@ -150,7 +150,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="UseOfConst.cpp" />
+    <ClCompile Include="UseOfConstructor.cpp" />
+    <ClCompile Include="UseOfCopyConstructor.cpp" />
+    <ClCompile Include="UseOfDestructor.cpp" />
     <ClCompile Include="UseOfGetter.cpp" />
+    <ClCompile Include="UseOfMoveConstructor.cpp" />
     <ClCompile Include="UseOfStatic.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

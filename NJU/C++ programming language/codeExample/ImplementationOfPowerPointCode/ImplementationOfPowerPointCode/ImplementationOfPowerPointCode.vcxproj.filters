@@ -24,5 +24,17 @@
     <ClCompile Include="UseOfGetter.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="UseOfConstructor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UseOfDestructor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UseOfCopyConstructor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UseOfMoveConstructor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

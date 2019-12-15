@@ -1,9 +1,9 @@
 ﻿  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
   版权所有(C) Microsoft Corporation。保留所有权利。
   
-  cl /c /ZI /JMC /W3 /WX- /diagnostics:classic /sdl /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:prompt AbstractFactory.cpp
+  cl /c /ZI /JMC /W3 /WX- /diagnostics:classic /sdl /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:prompt Strategy.cpp
   
-  AbstractFactory.cpp
+  Strategy.cpp
   Microsoft (R) Incremental Linker Version 14.16.27034.0
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
@@ -20,5 +20,6 @@
   Debug\Prototype.obj 
   Debug\Proxy.obj 
   Debug\SimpleFactory.obj 
+  Debug\Strategy.obj 
   Debug\TemplateMethod.obj 
   DesignPatterns.vcxproj -> E:\NJU的各种\NJU\C++ programming language\codeExample\ImplementationOfPowerPointCode\Debug\DesignPatterns.exe

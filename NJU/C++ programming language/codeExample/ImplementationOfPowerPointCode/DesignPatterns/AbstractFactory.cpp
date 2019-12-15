@@ -194,15 +194,15 @@ AbstractFactory* AbstractFactory::CreateFactory(Factory_type fac_type) {
 	return pFactory;
 }
 
-int main() {
-	AbstractFactory* pFactory = AbstractFactory::CreateFactory(AbstractFactory::Factory_type::BENZ_FACTORY);
-	ICar* pCar = pFactory->CreateCar();
-	IBike* pBike = pFactory->CreateBike();
-
-	cout << "创建了汽车:" << pCar->Name();
-	cout << endl;
-	cout << "创建了自行车:" << pBike->Name();
-
-
-	return 0;
-}
+//int main() {
+//	AbstractFactory* pFactory = AbstractFactory::CreateFactory(AbstractFactory::Factory_type::BENZ_FACTORY);
+//	ICar* pCar = pFactory->CreateCar();
+//	IBike* pBike = pFactory->CreateBike();
+//
+//	cout << "创建了汽车:" << pCar->Name();
+//	cout << endl;
+//	cout << "创建了自行车:" << pBike->Name();
+//
+//
+//	return 0;
+//}
