@@ -36,5 +36,26 @@
     <ClCompile Include="UseOfMoveConstructor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="UseOfNewAndDelete.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UseOfVirtualCompatibility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UseOfOverride.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UseOfVirtualTableAndVirtualCall.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UseOfNonVirtualFunction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UseOfInheritance.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UseOfVirtualDefaultParam.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

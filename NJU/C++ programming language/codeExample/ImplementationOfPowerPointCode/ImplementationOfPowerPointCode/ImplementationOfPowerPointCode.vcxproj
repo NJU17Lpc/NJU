@@ -154,8 +154,15 @@
     <ClCompile Include="UseOfCopyConstructor.cpp" />
     <ClCompile Include="UseOfDestructor.cpp" />
     <ClCompile Include="UseOfGetter.cpp" />
+    <ClCompile Include="UseOfInheritance.cpp" />
     <ClCompile Include="UseOfMoveConstructor.cpp" />
+    <ClCompile Include="UseOfNewAndDelete.cpp" />
+    <ClCompile Include="UseOfNonVirtualFunction.cpp" />
+    <ClCompile Include="UseOfOverride.cpp" />
     <ClCompile Include="UseOfStatic.cpp" />
+    <ClCompile Include="UseOfVirtualCompatibility.cpp" />
+    <ClCompile Include="UseOfVirtualDefaultParam.cpp" />
+    <ClCompile Include="UseOfVirtualTableAndVirtualCall.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

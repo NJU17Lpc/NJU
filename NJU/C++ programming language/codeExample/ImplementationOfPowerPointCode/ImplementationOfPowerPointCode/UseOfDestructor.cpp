@@ -53,8 +53,34 @@ public:
 		return *this;
 	}
 };
+/*
+一般来说，一个类如果定义了虚函数，最好将析构函数也定义成虚函数
 
+注意是先调用子类的析构函数，再调用父类的析构函数
+而构造函数相反，构造函数先父类，再子类
+*/
+class B {
+public:
+	virtual ~B() {
+		cout << "base destructor" << endl;
+	}
+};
+
+class D :public B {
+public:
+	~D() {
+		cout << "derived destructor" << endl;
+	}
+};
 //int main() {
-//	String s("asuka saito");
+//	//String s("asuka saito");
+//	B* b1;
+//	D d1;
+//	b1 = &d1;
+//
+//	//引用和指针一样动态调用
+//	//因为引用的本质就是解引用操作，所以本质上和指针一样使用
+//	D d2;
+//	B& b2 = d2;
 //	return 0;
 //}
