@@ -150,6 +150,7 @@
   <ItemGroup>
     <ClCompile Include="(33,44).cpp" />
     <ClCompile Include="1 2 3 5.cpp" />
+    <ClCompile Include="commandInterpret.cpp" />
     <ClCompile Include="OutputToFile.cpp" />
     <ClCompile Include="strtok_s.cpp" />
     <ClCompile Include="VectorDelete.cpp" />

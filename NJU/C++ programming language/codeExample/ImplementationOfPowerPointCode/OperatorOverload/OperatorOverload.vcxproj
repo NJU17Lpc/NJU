@@ -23,6 +23,7 @@
     <ClCompile Include="Array3D.cpp" />
     <ClCompile Include="charArray.cpp" />
     <ClCompile Include="Complex.cpp" />
+    <ClCompile Include="CPoint2Dand3D.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

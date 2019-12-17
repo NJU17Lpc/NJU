@@ -1,12 +1,11 @@
 ﻿  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
   版权所有(C) Microsoft Corporation。保留所有权利。
   
-  cl /c /ZI /JMC /W3 /WX- /diagnostics:classic /sdl /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:prompt UseOfInheritance.cpp UseOfNonVirtualFunction.cpp UseOfVirtualDefaultParam.cpp
+  cl /c /ZI /JMC /W3 /WX- /diagnostics:classic /sdl /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:prompt UseOfException.cpp
   
-  UseOfInheritance.cpp
-  UseOfNonVirtualFunction.cpp
-  UseOfVirtualDefaultParam.cpp
-  正在生成代码...
+  UseOfException.cpp
+e:\nju的各种\nju\c++ programming language\codeexample\implementationofpowerpointcode\implementationofpowerpointcode\useofexception.cpp(109): warning C4101: “e”: 未引用的局部变量
+e:\nju的各种\nju\c++ programming language\codeexample\implementationofpowerpointcode\implementationofpowerpointcode\useofexception.cpp(112): warning C4101: “e”: 未引用的局部变量
   Microsoft (R) Incremental Linker Version 14.16.27034.0
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
@@ -14,6 +13,7 @@
   Debug\UseOfConstructor.obj 
   Debug\UseOfCopyConstructor.obj 
   Debug\UseOfDestructor.obj 
+  Debug\UseOfException.obj 
   Debug\UseOfGetter.obj 
   Debug\UseOfInheritance.obj 
   Debug\UseOfMoveConstructor.obj 
@@ -24,4 +24,5 @@
   Debug\UseOfVirtualCompatibility.obj 
   Debug\UseOfVirtualDefaultParam.obj 
   Debug\UseOfVirtualTableAndVirtualCall.obj 
-  ImplementationOfPowerPointCode.vcxproj -> E:\NJU的各种\NJU\C++ programming language\codeExample\ImplementationOfPowerPointCode\Debug\BasicGrammer.exe
+MSVCRTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 _main，该符号在函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中被引用
+E:\NJU的各种\NJU\C++ programming language\codeExample\ImplementationOfPowerPointCode\Debug\BasicGrammer.exe : fatal error LNK1120: 1 个无法解析的外部命令

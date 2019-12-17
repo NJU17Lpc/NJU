@@ -20,10 +20,10 @@ void printV(vector<int>& v) {
 	cout << endl;
 }
 
-int main() {
-	vector<int> v = { 2,3,4,53,2,13,5,32,21,1,2 };
-	printV(v);
-	deleteByNum(v, 2);
-	printV(v);
-
-}
+//int main() {
+//	vector<int> v = { 2,3,4,53,2,13,5,32,21,1,2 };
+//	printV(v);
+//	deleteByNum(v, 2);
+//	printV(v);
+//
+//}

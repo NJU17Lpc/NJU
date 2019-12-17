@@ -57,5 +57,11 @@
     <ClCompile Include="UseOfVirtualDefaultParam.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="UseOfException.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UseOfVirtualizingConstructors.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

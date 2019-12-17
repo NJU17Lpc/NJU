@@ -30,24 +30,24 @@ T Stack<T>::pop() {
 	}
 }
 
-int main() {
-	//必须制定好具体的类型
-	Stack<double> myStack;
-	for (int i = 0; i < 5; i++) {
-		myStack.push(i);
-	}
-	myStack.print();
-	cout << endl;
-	for (int i = 0; i < 4; i++) {
-		cout << myStack.pop() << ",";
-	}
-	cout << myStack.pop();
-	cout << endl;
-	try {
-		myStack.pop();
-	}
-	catch (exception e) {
-		cout << e.what() << endl;
-	}
-	return 0;
-}
+//int main() {
+//	//必须制定好具体的类型
+//	Stack<double> myStack;
+//	for (int i = 0; i < 5; i++) {
+//		myStack.push(i);
+//	}
+//	myStack.print();
+//	cout << endl;
+//	for (int i = 0; i < 4; i++) {
+//		cout << myStack.pop() << ",";
+//	}
+//	cout << myStack.pop();
+//	cout << endl;
+//	try {
+//		myStack.pop();
+//	}
+//	catch (exception e) {
+//		cout << e.what() << endl;
+//	}
+//	return 0;
+//}

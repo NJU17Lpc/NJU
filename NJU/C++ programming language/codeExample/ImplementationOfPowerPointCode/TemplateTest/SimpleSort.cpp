@@ -1,5 +1,8 @@
 #include<iostream>
 using namespace std;
+
+//必须重载操作符>
+//一定情况下，需要重载操作符=,还有copy constructor
 template<typename T>
 void sort(T A[], unsigned int num) {
 	for (int i = 1; i < num; i++) {
