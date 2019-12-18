@@ -71,9 +71,9 @@ public:
 	}
 };
 class Derived:public Base{
-	friend ostream& operator<<(ostream& out, const Base &d) {
-		out << "Derived ";
-	}
+	//friend ostream& operator<<(ostream& out, const Base &d) {
+	//	out << "Derived ";
+	//}
 };
 
 /*
@@ -85,11 +85,11 @@ class Derived:public Base{
 5、同样，传过去一个 Base array[] ，要去delete[] array ， 结果也是不可预期
 因此绝对不要以多态方式处理数组
 */
-void Print(ostream& s, const Base array[], int size) {
-	for (int i = 0; i < size; i++) {
-		s << array[i];
-	}
-}
+//void Print(ostream& s, const Base array[], int size) {
+//	for (int i = 0; i < size; i++) {
+//		s << array[i];
+//	}
+//}
 
 	//这里我们不做上面的的实例化了
 

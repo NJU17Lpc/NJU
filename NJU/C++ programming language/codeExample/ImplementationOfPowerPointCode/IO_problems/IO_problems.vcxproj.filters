@@ -36,5 +36,17 @@
     <ClCompile Include="commandInterpret.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ScheduleProblem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapons.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="文版排版的输入.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="输入输出流重载.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

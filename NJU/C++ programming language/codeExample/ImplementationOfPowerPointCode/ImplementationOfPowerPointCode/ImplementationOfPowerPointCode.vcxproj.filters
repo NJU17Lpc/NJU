@@ -63,5 +63,11 @@
     <ClCompile Include="UseOfVirtualizingConstructors.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="UseOfFriend.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UseOfMultiInheritance.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

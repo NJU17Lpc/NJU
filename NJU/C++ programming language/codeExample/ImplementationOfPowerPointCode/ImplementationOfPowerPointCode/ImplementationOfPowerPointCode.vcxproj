@@ -154,9 +154,11 @@
     <ClCompile Include="UseOfCopyConstructor.cpp" />
     <ClCompile Include="UseOfDestructor.cpp" />
     <ClCompile Include="UseOfException.cpp" />
+    <ClCompile Include="UseOfFriend.cpp" />
     <ClCompile Include="UseOfGetter.cpp" />
     <ClCompile Include="UseOfInheritance.cpp" />
     <ClCompile Include="UseOfMoveConstructor.cpp" />
+    <ClCompile Include="UseOfMultiInheritance.cpp" />
     <ClCompile Include="UseOfNewAndDelete.cpp" />
     <ClCompile Include="UseOfNonVirtualFunction.cpp" />
     <ClCompile Include="UseOfOverride.cpp" />
