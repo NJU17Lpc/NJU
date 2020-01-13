@@ -1,0 +1,3 @@
+//052s
+int in = (int) java.lang.Math.sqrt(9);
+System.out.println("result = "+in);

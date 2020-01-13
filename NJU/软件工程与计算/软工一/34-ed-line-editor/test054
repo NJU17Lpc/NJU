@@ -1,0 +1,6 @@
+//054s
+int a=2,b=3;
+int temp = a;
+a = b;
+b = temp;
+System.out.println("a="+a+",b="+b);

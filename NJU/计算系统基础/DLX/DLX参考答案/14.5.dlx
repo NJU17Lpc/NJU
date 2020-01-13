@@ -1,0 +1,18 @@
+            .DATA
+            .TEXT   
+BINARY :    SW      SAVER1(R0), R1
+            SW      SAVER2(R0), R2
+            SW      SAVER3(R0), R3
+            SW      SAVER4(R0), R4
+            ADDI    R4, R0, ASCIIBUFF
+		;判断百位数
+BEGIN100 :  ADDI    R1, R0, x30
+LOOP100 :   SLTI    R3, R2, #100
+            BNEZ    R3, END100
+            ADDI    R1, R1, #1
+            SUBI    R2, R2, #100
+            J       LOOP100
+END100 :    SB      0(R4), R1
+		;判断十位数
+BEGIN10 :   ADDI    R1, R0, x30
+SLTI r3

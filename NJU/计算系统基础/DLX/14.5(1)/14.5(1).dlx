@@ -1,0 +1,45 @@
+		;R2包含最初要转化的数
+
+
+            .DATA	x30000000
+ASCIIBUFF : .SPACE  4
+            .TEXT   x40000000
+            .GLOBAL  MAIN
+MAIN :      ADDI    R4, R0, ASCIIBUFF
+TO100 :     SLTI    R3, R2, 100
+            BNEZ    R3, DELETE0
+LOOP1 :     SUBI    R2, R2, #100
+            ADDI    R1, R1, #1
+            SLTI    R3, R2, #100
+            BEQZ    R3, LOOP1
+            ADDI    R1, R1, x30
+            SB      0(R4), R1
+            J       TO10
+DELETE0 :   SUBI    R4, R4, #1
+
+TO10 :      ADDI    R1, R0, #0
+            SLTI    R3, R2, 10
+            BNEZ    R3, DELETE00
+LOOP2 :     SUBI    R2, R2, #10
+            ADDI    R1, R1, #1
+            SLTI    R3, R2, #10
+            BEQZ    R3, LOOP2
+            ADDI    R1, R1, x30
+            SB      1(R4), R1
+            J       TO1
+DELETE00 :  SUBI    R4, R4, #1
+
+TO1 :       ADDI    R1, R0, #0
+            SLTI    R3, R2, 1
+            BNEZ    R3, DELETE000
+LOOP3 :     SUBI    R2, R2, #1
+            ADDI    R1, R1, #1
+            SLTI    R3, R2, #1
+            BEQZ    R3, LOOP3
+            ADDI    R1, R1, x30
+            SB      2(R4), R1
+            J       EXIT
+DELETE000 : SUBI    R4, R4, #1
+EXIT :      LHI     R4, x3000
+            TRAP    x08
+            TRAP    00

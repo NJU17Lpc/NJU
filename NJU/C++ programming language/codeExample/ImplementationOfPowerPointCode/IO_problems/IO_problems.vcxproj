@@ -154,6 +154,7 @@
     <ClCompile Include="OutputToFile.cpp" />
     <ClCompile Include="ScheduleProblem.cpp" />
     <ClCompile Include="strtok_s.cpp" />
+    <ClCompile Include="test.cpp" />
     <ClCompile Include="VectorDelete.cpp" />
     <ClCompile Include="Weapons.cpp" />
     <ClCompile Include="[1,2,3].cpp" />

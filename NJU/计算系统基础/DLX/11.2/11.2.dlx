@@ -1,0 +1,29 @@
+            .DATA
+            .TEXT   x30000000
+            .GLOBAL  MAIN
+MAIN :      TRAP    x06
+            SUBI    R4, R4, x30
+            ADDI    R5, R4, #0
+            ADDI    R10, R0, #1
+            ADDI    R11, R0, #1
+
+            SEQI    R20, R5, #0
+            BNEZ    R20, NISZERO
+
+            SEQI    R20, R5, #1
+            BNEZ    R20, NISONE
+            SUBI    R5, R5, #1
+
+LOOP :      ADD     R12, R10, R11
+            ADDI    R10, R11, #0
+            ADDI    R11, R12, #0
+            SUBI    R5, R5, #1
+            BEQZ    R5, OUTPUT
+            J       LOOP
+NISZERO :   ADDI    R1, R0, #1
+            J       EXIT
+NISONE :    ADDI    R1, R0, #1
+            J       EXIT
+OUTPUT :    ADDI    R1, R12, #0
+EXIT :      TRAP    x00		;TRAP-MAKKES-R1-RETURN-TO-CERTAIN-NUMBER 
+

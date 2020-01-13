@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DLXObject>
+<Data>
+	<DataTable Base='4294967295' Length='8'>
+		<Symbol name='SAVER1' isGlobal='False' isExtern='False' >0,1,2,3</Symbol>
+		<Symbol name='SAVER2' isGlobal='False' isExtern='False' >4,5,6,7</Symbol>
+	</DataTable>
+	<DataContent>0000000000000000</DataContent>
+</Data>
+<Text>
+
+	<TextTable Base='4294967295' Length='116'>
+		<Symbol name='MAIN' isGlobal='True' isExtern='False' >0</Symbol>
+		<Symbol name='TONUMBER' isGlobal='False' isExtern='False' >52</Symbol>
+		<Symbol name='LARGE' isGlobal='False' isExtern='False' >72</Symbol>
+		<Symbol name='END' isGlobal='False' isExtern='False' >92</Symbol>
+		<Symbol name='TOCHAR' isGlobal='False' isExtern='False' >96</Symbol>
+		<Symbol name='LARGE1' isGlobal='False' isExtern='False' >108</Symbol>
+	</TextTable>
+	<TextContent>35 #9 1 3 4 #0 32 TONUMBER 1 1 3 #0 35 #9 1 3 4 #0 32 TONUMBER 1 2 3 #0 0 3 1 2 32 TOCHAR 1 4 3 #0 35 #7 35 #0 17 8 3 #48 30 8 LARGE 19 8 3 #57 29 8 LARGE 3 3 3 #48 17 8 3 #65 30 8 END 19 8 3 #69 29 8 END 3 3 3 #55 33 31 17 8 3 #10 29 8 LARGE1 1 3 3 #48 1 3 3 #55 33 31 </TextContent>
+</Text>
+</DLXObject>

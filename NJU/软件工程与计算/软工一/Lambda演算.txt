@@ -1,0 +1,140 @@
+Lambda 演算
+
+1. 
+
+I = \x.x 
+
+S = \x.\y.\z.x z(y z) 
+
+l = S I 
+
+求 l m n 
+
+Solution：1 m n = \x.\y.\z.x z(y z)\x.x m n
+          = \x.x n(m n)
+          =n(m n）
+
+2. 
+
+ZERO = \f.\x.x 
+
+SUCC = \n.\f.\x.f (n f x) 
+
+求 SUCC (SUCC ZERO) 
+
+Solution: SUCC(SUCC ZERO)=SUCC (\n.\f.\x.f(n f x) ZERO)
+                         =SUCC(\f.\x.f(ZERO f x))
+                         =SUCC(\f.\x.f(\f.\x.x f x))
+                         =SUCC(\f.\x.f x)
+                         =\n.\f.\x.f(n f x)(\f.\x.f x)
+                         =\f.\x.f((\f.\x.f x) f x)
+                         =\f.\x.f(f x)
+
+3. 
+
+POW = \b.\e.e b 
+
+求POW TWO THREE
+
+Solution:POW TWO THREE=\b.\e.e b TWO THREE
+                      =\b.\e.e b\f.\x.f(f x)\f.\x.f(f(f x))
+                      =\f.\x.f(f(f x))\f.\x.f(f x)
+                      =\x.\f.\x.f(f x)\f.\x.f(f x)\f.\x.f(f x) x
+                      =\f.\x.f(f(\f.\x.f(f x) x)\f.\x.f(f x) x
+                      
+4. 
+
+TRUE = \x.\y.x 
+
+FALSE = \x.\y.y 
+
+AND = \p.\q.p q p 
+
+OR = \p.\q.p p q 
+
+NOT = \p.\a.\b.p b a 
+
+IF = \p.\a.\b.p a b 
+
+求NOT (NOT TRUE) 
+
+求IF (OR FALSE FALSE) a b 
+
+Solution:NOT(NOT TRUE)=NOT (\p.\a.\b.p b a TRUE)
+                      =NOT(\a.\b.TRUE b a)
+                      =\p.\a.\b.p b a(\a.\b.TRUE b a)
+                      =\a.\b.TRUE a b
+                      =TRUE
+        
+         IF(OR FALSE FALSE)a b=\p.\a.\b.p a b(OR FALSE FALSE)a b
+                              =OR FALSE \x.\y.y a b
+                              =\p.\q.p p q \x.\y.y b
+                              =\x.\y.y \x.\y.y b
+                              =b
+
+5 LEQ = \m.\n.ISZERO (SUB m n) 
+求大于等于GEQ
+
+Solution:GEQ=NOT LEQ
+            =NOT \m.\n.ISZERO(SUB m n)
+
+6. Lambda> FACT1 = \f.\n.IF (ISZERO n) ONE (MULT n (f f (PRED n)))
+
+Lambda> FACT = FACT1 FACT1
+
+求 FACT THREE
+
+Solution:FACT THREE=FACT1 FACT1 THREE
+                   = \f.\n.IF (ISZERO n) ONE (MULT n (f f (PRED n))) THREE
+                   = MULT THREE (f f (PRED THREE))
+                   = MULT THREE TWO
+                   =\f.\x.f(f(f(f(f(f x)))))
+
+7. Lambda> ADD = W (\f.\n.\m.IF (ISZERO m) n (f f (SUCC n) (PRED m)))
+
+求 ADD TWO FOUR
+
+Solution: ADD TWO FOUR=
+                      =
+                      =
+                      =
+
+
+8. Lambda> FACT2 = \f.\n.IF (ISZERO n) ONE (MULT n (f (PRED n)))
+
+Lambda> FACTY = Y FACT2
+
+求FACTY THREE
+
+Solution:  FACTY THREE=Y FACT2 THREE
+                      =FACT2 (Y FACT2) THREE
+                      = 
+                      =
+
+
+
+
+
+9. Lambda> CONS a (CONS b (CONS c NIL))
+
+求CAR (CDR (CONS a (CONS b (CONS c NIL))))
+
+Solution: CAR (CDR (CONS a (CONS b (CONS c NIL))))=
+                                                  =
+                                                  =
+                                                  =
+
+
+
+
+10.  求  有序对的 LENGTH
+
+Solution: LENGTH=
+                =
+                =
+                =
+
+
+
+
+

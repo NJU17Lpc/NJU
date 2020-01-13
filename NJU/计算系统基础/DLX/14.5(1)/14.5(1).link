@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DLXObject>
+<Data>
+	<DataTable Base='805306368' Length='4'>
+		<Symbol name='ASCIIBUFF' isGlobal='False' isExtern='False' >0,1,2,3</Symbol>
+	</DataTable>
+	<DataContent>00000000</DataContent>
+</Data>
+<Text>
+
+	<TextTable Base='1073741824' Length='168'>
+		<Symbol name='MAIN' isGlobal='True' isExtern='False' >0</Symbol>
+		<Symbol name='TO100' isGlobal='False' isExtern='False' >28</Symbol>
+		<Symbol name='LOOP1' isGlobal='False' isExtern='False' >36</Symbol>
+		<Symbol name='DELETE0' isGlobal='False' isExtern='False' >64</Symbol>
+		<Symbol name='TO10' isGlobal='False' isExtern='False' >68</Symbol>
+		<Symbol name='LOOP2' isGlobal='False' isExtern='False' >80</Symbol>
+		<Symbol name='DELETE00' isGlobal='False' isExtern='False' >108</Symbol>
+		<Symbol name='TO1' isGlobal='False' isExtern='False' >112</Symbol>
+		<Symbol name='LOOP3' isGlobal='False' isExtern='False' >124</Symbol>
+		<Symbol name='DELETE000' isGlobal='False' isExtern='False' >152</Symbol>
+		<Symbol name='EXIT' isGlobal='False' isExtern='False' >156</Symbol>
+	</TextTable>
+	<TextContent>1 4 0 ASCIIBUFF 0 17 3 2 #100 30 3 DELETE0 3 2 2 #100 1 1 1 #1 17 3 2 #100 29 3 LOOP1 1 1 1 #48 26 1 4 #0 31 TO10 3 4 4 #1 1 1 0 #0 17 3 2 #10 30 3 DELETE00 3 2 2 #10 1 1 1 #1 17 3 2 #10 29 3 LOOP2 1 1 1 #48 26 1 4 #1 31 TO1 3 4 4 #1 1 1 0 #0 17 3 2 #1 30 3 DELETE000 3 2 2 #1 1 1 1 #1 17 3 2 #1 29 3 LOOP3 1 1 1 #48 26 1 4 #2 31 EXIT 3 4 4 #1 24 4 #12288 35 #8 35 #0 </TextContent>
+</Text>
+</DLXObject>

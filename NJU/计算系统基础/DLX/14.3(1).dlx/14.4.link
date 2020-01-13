@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DLXObject>
+<Data>
+	<DataTable Base='805306368' Length='0'>
+	</DataTable>
+	<DataContent></DataContent>
+</Data>
+<Text>
+
+	<TextTable Base='4294967295' Length='200'>
+		<Symbol name='MAIN' isGlobal='True' isExtern='False' >0</Symbol>
+		<Symbol name='LOOP' isGlobal='False' isExtern='False' >4</Symbol>
+		<Symbol name='START' isGlobal='False' isExtern='False' >36</Symbol>
+		<Symbol name='LOOP2' isGlobal='False' isExtern='False' >60</Symbol>
+		<Symbol name='MULTIPLY1' isGlobal='False' isExtern='False' >96</Symbol>
+		<Symbol name='LOOP1' isGlobal='False' isExtern='False' >108</Symbol>
+		<Symbol name='START16' isGlobal='False' isExtern='False' >124</Symbol>
+		<Symbol name='LOOP4' isGlobal='False' isExtern='False' >136</Symbol>
+		<Symbol name='MULTIPLY2' isGlobal='False' isExtern='False' >172</Symbol>
+		<Symbol name='LOOP3' isGlobal='False' isExtern='False' >180</Symbol>
+		<Symbol name='EXIT' isGlobal='False' isExtern='False' >196</Symbol>
+	</TextTable>
+	<TextContent>24 1 #12288 35 #6 35 #7 21 10 4 #10 30 10 START 26 4 1 #0 1 1 1 #1 1 8 8 #1 31 LOOP 2 1 1 8 25 9 1 #0 21 10 9 #88 30 10 START16 21 10 9 #120 30 10 START16 3 8 8 #1 3 9 9 #48 32 MULTIPLY1 1 1 1 #1 25 7 1 #0 3 7 7 #48 0 9 9 7 30 8 LOOP2 31 EXIT 3 8 8 #1 1 11 0 #9 1 12 9 #0 0 9 9 12 3 11 11 #1 30 11 LOOP1 33 31 1 1 1 #1 25 9 1 #0 3 9 9 #48 3 8 8 #2 32 MULTIPLY2 1 1 1 #1 25 7 1 #0 3 7 7 #48 0 9 9 7 3 8 8 #1 30 8 LOOP4 31 EXIT 1 11 0 #15 1 12 9 #0 0 9 9 12 3 11 11 #1 30 11 LOOP3 33 31 35 #0 </TextContent>
+</Text>
+</DLXObject>

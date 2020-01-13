@@ -1,0 +1,69 @@
+		;R10判断，R8计数,R11乘法计数
+            .DATA	x30000000
+
+            .TEXT   
+            .GLOBAL  MAIN
+MAIN :      LHI     R1, x3000
+
+LOOP :      TRAP    x06
+            TRAP    x07
+            SEQI    R10, R4, x0A
+            BNEZ    R10, START
+            SB      0(R1), R4
+            ADDI    R1, R1, #1
+            ADDI    R8, R8, #1
+            J       LOOP
+
+START :     SUB     R1, R1, R8
+            LB      R9, 0(R1)		;此时R9为第一个数
+
+            SEQI    R10, R9, #88
+            BNEZ    R10, START16
+            SEQI    R10, R9, #120
+            BNEZ    R10, START16
+
+LOOP2 :     SUBI    R8, R8, #1
+            SUBI    R9, R9, x30
+            JAL     MULTIPLY1
+            ADDI    R1, R1, #1
+            LB      R7, 0(R1)
+            SUBI    R7, R7, x30
+            ADD     R9, R9, R7
+
+            BNEZ    R8, LOOP2
+            J       EXIT
+
+MULTIPLY1 : SUBI    R8, R8, #1
+            ADDI    R11, R0, #9
+            ADDI    R12, R9, #0
+LOOP1 :     ADD     R9, R9, R12
+            SUBI    R11, R11, #1
+            BNEZ    R11, LOOP1
+            JR      R31
+
+START16 :   ADDI    R1, R1, #1
+            LB      R9, 0(R1)
+            SUBI    R9, R9, x30
+
+LOOP4 :     SUBI    R8, R8, #2
+            JAL     MULTIPLY2
+            ADDI    R1, R1, #1
+            LB      R7, 0(R1)
+            SUBI    R7, R7, x30
+            ADD     R9, R9, R7
+            SUBI    R8, R8, #1
+            BNEZ    R8, LOOP4
+            J       EXIT
+
+MULTIPLY2 : ADDI    R11, R0, #15
+            ADDI    R12, R9, #0
+LOOP3 :     ADD     R9, R9, R12
+            SUBI    R11, R11, #1
+            BNEZ    R11, LOOP3
+            JR      R31
+
+
+EXIT :      TRAP    x00
+
+
+

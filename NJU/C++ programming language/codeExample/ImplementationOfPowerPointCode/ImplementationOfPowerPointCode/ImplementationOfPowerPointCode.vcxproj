@@ -163,6 +163,7 @@
     <ClCompile Include="UseOfNonVirtualFunction.cpp" />
     <ClCompile Include="UseOfOverride.cpp" />
     <ClCompile Include="UseOfStatic.cpp" />
+    <ClCompile Include="UseOfStaticInit.cpp" />
     <ClCompile Include="UseOfVirtualCompatibility.cpp" />
     <ClCompile Include="UseOfVirtualDefaultParam.cpp" />
     <ClCompile Include="UseOfVirtualizingConstructors.cpp" />

@@ -1,0 +1,13 @@
+
+            .DATA	x30000000
+STRING :    .ASCIIZ "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            .TEXT   x40000000
+            .GLOBAL  MAIN
+MAIN :      ADDI    R2, R0, STRING
+LOOP :      LB      R4, 0(R2)
+            BEQZ    R2, EXIT
+            TRAP    x07
+            ADDI    R2, R2, x1
+            J       LOOP
+EXIT :      TRAP    x00
+

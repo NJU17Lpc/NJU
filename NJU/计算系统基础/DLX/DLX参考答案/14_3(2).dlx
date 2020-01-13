@@ -1,0 +1,37 @@
+            .DATA
+SAVER1 :    .SPACE  4
+SAVER2 :    .SPACE  4
+            .TEXT   
+            .GLOBAL  MAIN
+MAIN :      TRAP    x09
+            ADDI    R3, R4, 0
+            JAL     TONUMBER
+            ADDI    R1, R3, 0
+            TRAP    x09
+            ADDI    R3, R4, 0
+            JAL     TONUMBER
+            ADDI    R2, R3, 0
+            ADD     R3, R1, R2
+            JAL     TOCHAR
+            ADDI    R4, R3, 0
+            TRAP    x07
+            TRAP    x00
+
+TONUMBER :  SLTI    R8, R3, #48
+            BNEZ    R8, LARGE
+            SLEI    R8, R3, #57
+            BEQZ    R8, LARGE
+            SUBI    R3, R3, #48
+LARGE :     SLTI    R8, R3, #65
+            BNEZ    R8, END
+            SLEI    R8, R3, #69
+            BEQZ    R8, END
+            SUBI    R3, R3, #55
+END :       RET     
+
+
+TOCHAR :    SLTI    R8, R3, #10
+            BEQZ    R8, LARGE1
+            ADDI    R3, R3, x30
+LARGE1 :    ADDI    R3, R3, #55
+            RET     

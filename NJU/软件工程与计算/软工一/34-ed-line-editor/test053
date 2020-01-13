@@ -1,0 +1,4 @@
+//053s
+String hello = "hello, world.hello, China.hello, nju.";
+String[] hellos = hello.split(".")
+System.out.println(hellos[hellos.length-1]);

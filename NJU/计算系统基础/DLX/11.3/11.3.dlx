@@ -1,0 +1,29 @@
+		;R11是FILE地址
+		;R12是字
+		;R13计数
+		;R14是否结束
+            .DATA	x30000000
+FILE :      .ASCIIZ "AHDGUZZZZZZZZSYUGCJHBAVJ"
+            .WORD   x04
+            .TEXT   x40000000
+            .GLOBAL  MAIN
+MAIN :      LHI     R11, x3000
+            TRAP    x06
+            ADDI    R5, R4, #0
+LOOP :      LB      R12, 0(R11)
+
+            SEQI    R14, R12, x04
+            BNEZ    R14, EXIT
+
+            ADDI    R11, R11, #1
+
+            SEQ     R20, R5, R12
+            BEQZ    R20, LOOP
+            ADDI    R13, R13, #1
+            J       LOOP
+
+EXIT :      ADDI    R4, R13, #0
+            ADDI    R4, R4, x30
+            TRAP    x07
+            TRAP    x00		;
+	

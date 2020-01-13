@@ -1,0 +1,33 @@
+		;用R10表示输入值
+		;用R11表示判断
+            .DATA	x30000000
+FILE :      .ASCIIZ "AUHFDIUAbvabvasdfg"
+            .WORD   x04
+            .TEXT   x40000000
+            .GLOBAL  MAIN
+MAIN :      LHI     R9, x3000
+LOOP :      LB      R10, 0(R9)
+
+NEXT :      JAL     TOUPPER
+
+            ADDI    R9, R9, #1
+            SEQI    R11, R10, x04
+            BEQZ    R11, LOOP
+            J       EXIT
+
+TOUPPER :   SLTI    R11, R10, #122
+            BEQZ    R11, END
+            SLTI    R11, R10, #97
+            BNEZ    R11, END
+
+            SUBI    R10, R10, #32
+            SB      0(R9), R10
+
+END :       JR      R31
+
+EXIT :      LHI     R9, x3000
+            ADDI    R4, R9, #0
+            TRAP    x08
+            TRAP    x00
+
+

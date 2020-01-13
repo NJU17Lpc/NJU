@@ -1,0 +1,114 @@
+lambda表达式：
+普通的succ和plus没问题
+\f.\x.x为0
+\f.\x.fx为1
+以此类推
+
+对于pow需要注意的是：例如求2的三次方
+(\b.\e\.eb)(\f.\x.ffx)(\f.\x.fffx)
+=(\f.\x.fffx)(\f.\x.ffx)
+=\x.(\f.\x.ffx)(\f.\x.ffx)(\f.\x.ffx)x
+这里前后的x，和中间的x并没有必要的联系，为了分辨，需要阿尔法规约
+\x.(\m.\n.mmn)(\m.\n.mmn)(\m.\n.mmn)x
+=\x.(\m.\n.mmn)(\m.\n.mmn)(\n.xxn)
+=\x.(\m.\n.mmn)(\n.(\n.xxn)(\n.xxn)n)
+=\x.(\m.\n.mmn)(\n.(\n.xxn)(xxn))
+=\x.(\m.\n.mmn)(\n.xxxxn)
+下面这一步看上去太多\n了，其实因为最后一个n，\n都一个接一个没了
+=\x.(\n.(\n.xxxxn)(\n.xxxxn)n)
+=\x.(\n.(\n.xxxxn)xxxxn)
+=\x.(\n.(xxxxxxxxn))
+=8
+
+PRED ONE
+(\n.\f.\x.n(\g.\h.h(gf))(\u.x)(\u.u))(\f.\x.fx)
+=\f.\x.(\f.\x.fx)(\g.\h.h(gf))(\u.x)(\u.u)
+=\f.\x.(\f.\x.fx)(\u.u)((\u.x)f)
+=\f.\x.(\u.u)((\u.x)f)
+=\f.\x.x=ZERO
+
+在模拟自然数这里给出的f,x,m,n都比较重要，最好不要随便替换
+
+
+TRUE    \x.\y.x
+FALSE  \x.\y.y
+NOT    \p.\a.\b.pba
+AND    \p.\q.pqp
+IF         \p.\a.\b.pab
+
+AND TRUE FALSE
+=(\p.\q.pqp)(\x.\y.x)(\x.\y.y)
+=(\x.\y.x)(\x.\y.y)(\x.\y.x)
+=\x.\y.y
+
+IF TRUE a b
+(\p.\a.\b.pab)(\x.\y.x)ab
+=(\x.\y.x)ab
+=a
+
+IF FALSE a b
+(\p.\a.\b.pab)(\x.\y.y)ab
+=b
+
+NOT TRUE
+(\p.\a.\b.pba)(\x.\y.x)
+=\a.\b.(\x.\y.x)ba
+=\a.\b.b=FALSE
+
+二重应用
+FACT THREE
+=FACT1 FACT1 THREE
+=(\f.\n.IF(ISZERO n) ONE (MULT n (ff(PRED n)))) FACT1 THREE
+=MULT THREE (FACT1 FACT1 TWO)
+=MULT THREE (MULT TWO(MULT ONE ONE))
+=SIX
+不动点消除二重应用
+FACT THREE
+=Y FACT2 THREE
+=FACT2 (Y FACT2) THREE
+=(\f.\n.IF(ISZERO n) ONE (MULT n (ff(PRED n)))) (Y FACT2) THREE
+=MULT THREE (Y FACT2 TWO)
+=MULT THREE (MULT TWO ONE)
+
+W(\f.\n.\mIF (ISZERO m) n (ff(SUCC n) (PRED m))) TWO FOUR
+FUNC = (\f.\n.\mIF (ISZERO m) n (ff(SUCC n) (PRED m))) 
+上式等于=FUNC FUNC THREE THREE
+=FUNC FUNC (FOUR TWO)
+=FUNC FUNC FIVE ONE
+=FUNC FUNC SIX ZERO
+=SIX
+
+
+(\x.\y.\z.xz(yz))(\x.x)mn
+=\x.xn(mn)
+=n(mn)
+
+CONS a b
+=(\x.\y.\f.fxy)ab
+=\f.fab
+CONS a(CONS b(CONS c NIL))
+=CONS a(CONS b (\f.fcNIL))
+=CONS a \f.fb\f.fcNIL
+=\f.f a \f.f b \f.f c \x.TRUE
+
+先不要展开，提取出第一个式子后再向下解答
+CAR (CONS a (CONS b (CONS c NIL)))
+=(\p.p TRUE)(CONS a (CONS b (CONS c NIL)))
+=(CONS a (CONS b (CONS c NIL)))TRUE
+=\x.\y.\f.fxy(a (CONS b (CONS c NIL)))TRUE
+=TRUE a (CONS b (CONS c NIL))
+=a
+
+CDR (CONS a (CONS b (CONS c NIL)))
+=(CONS a (CONS b (CONS c NIL)))FALSE
+=FALSE a (CONS b (CONS c NIL))
+=CONS b (CONS c NIL)
+
+NULL  (CONS a (CONS b (CONS c NIL)))
+=\p.p(\x.\y.FALSE) (CONS a (CONS b (CONS c NIL)))
+=(CONS a (CONS b (CONS c NIL)))(\x.\y.FALSE)
+=(\x.\y.\f.fxy)a (CONS b (CONS c NIL))(\x.\y.FALSE)
+=(\x.\y.FALSE)a(CONS b (CONS c NIL))
+=\x.\y.(CONS b (CONS c NIL))
+
+至于求长度，大不了先乱算length=length，然后用F(YF)随便带进去

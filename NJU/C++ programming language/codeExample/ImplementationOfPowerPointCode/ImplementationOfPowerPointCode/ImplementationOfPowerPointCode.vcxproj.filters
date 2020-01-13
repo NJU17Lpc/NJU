@@ -69,5 +69,8 @@
     <ClCompile Include="UseOfMultiInheritance.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="UseOfStaticInit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

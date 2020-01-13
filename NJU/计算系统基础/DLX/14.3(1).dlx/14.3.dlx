@@ -1,0 +1,30 @@
+            .DATA	x30000000
+            .TEXT   x40000000
+            .GLOBAL  MAIN
+MAIN :      TRAP    x09
+            JAL     CHANGE1
+            ADDI    R1, R4, #0
+            TRAP    x09
+            JAL     CHANGE1
+            ADDI    R2, R4, #0
+
+            ADD     R4, R1, R2
+
+            SLTI    R5, R4, #10
+            BEQZ    R5, CASE1
+            ADDI    R4, R4, x30
+            TRAP    x07
+            TRAP    x00
+
+CASE1 :     ADDI    R4, R4, #55
+            TRAP    x07
+            TRAP    x00
+
+CHANGE1 :   SLTI    R11, R4, x39
+            BEQZ    R11, ELSE1
+            SUBI    R4, R4, x30
+            J       END1
+ELSE1 :     SUBI    R4, R4, #55
+
+END1 :      JR      R31
+

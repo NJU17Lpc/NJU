@@ -1,0 +1,12 @@
+            .DATA
+            .TEXT   x30000000
+            .GLOBAL  MAIN
+MAIN :      ANDI    R3, R1, x1
+            BNEZ    R3, COUNT
+            SRLI    R1, R1, x1
+            J       MAIN
+COUNT :     ADDI    R2, R2, x1
+            SRLI    R1, R1, x1
+            BEQZ    R1, EXIT
+            J       MAIN
+EXIT :      TRAP    x00

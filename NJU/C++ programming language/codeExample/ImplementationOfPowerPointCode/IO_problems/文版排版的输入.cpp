@@ -73,21 +73,21 @@ void handleRainInput(vector<string>& res) {
 
 }
 
-int main() {
-	vector<string> res;
-	//handleInput1(res);
-	handleRainInput(res);
-
-	for (int i = 0; i < res.size(); i++) {
-		cout << res[i] << " ";
-	}
-	cout << endl;
-	vector<int> test1 = {2,1,0,3,4,0,6,2,3};
-	vector<int> test2 = { 0,1,0,2,1,0,1,3,2,1,2,1 };
-	vector<int> test3 = { 0, 5, 4, 3, 2, 1, 2, 3, 4, 5, 0, 2, 1, 2, 2, 2 };
-	cout << cacuRain(test1) << endl;
-	cout << cacuRain(test2) << endl;
-	cout << cacuRain(test3) << endl;
-
-	return 0;
-}
+//int main() {
+//	vector<string> res;
+//	//handleInput1(res);
+//	handleRainInput(res);
+//
+//	for (int i = 0; i < res.size(); i++) {
+//		cout << res[i] << " ";
+//	}
+//	cout << endl;
+//	vector<int> test1 = {2,1,0,3,4,0,6,2,3};
+//	vector<int> test2 = { 0,1,0,2,1,0,1,3,2,1,2,1 };
+//	vector<int> test3 = { 0, 5, 4, 3, 2, 1, 2, 3, 4, 5, 0, 2, 1, 2, 2, 2 };
+//	cout << cacuRain(test1) << endl;
+//	cout << cacuRain(test2) << endl;
+//	cout << cacuRain(test3) << endl;
+//
+//	return 0;
+//}
